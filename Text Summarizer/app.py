@@ -3,7 +3,6 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 app = Flask(__name__)
 
-# Load the model and tokenizer
 tokenizer = T5Tokenizer.from_pretrained('t5-small')
 model = T5ForConditionalGeneration.from_pretrained('t5-small')
 
